@@ -15,7 +15,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/wasded/cocoapodtest", :tag => "#{spec.version}" }
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "cocoapodtest/**/*.{swift}"
 
 end
