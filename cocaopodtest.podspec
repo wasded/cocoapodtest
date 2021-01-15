@@ -13,8 +13,10 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Andrey Bashkirtcev" => "nruzumak@gmail.com" }
 
-  spec.source       = { :git => "https://github.com/wasded/cocoapodtest", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/wasded/cocoapodtest" }
 
-  spec.source_files  = "cocoapodtest/**/*.{swift}"
+  spec.source_files  = "cocoapodtest/**/*.{h,m,swift}"
+  spec.platform = :ios
+  spec.ios.deployment_target = '12.0'
 
 end
